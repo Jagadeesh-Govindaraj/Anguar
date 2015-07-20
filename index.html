@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-resource.js"></script>
+		<title>Angular Homework</title>
+	</head>
+	<body ng-controller="listController as list" ng-cloak>
+	
+			<div big-photo  class="thumbnail-element" ng-repeat="photo in list.photos">
+				
+				<img  class="thumb" ng-src="{{photo.thumbnailUrl}}"  >
+				<p class="thumb-title" >{{photo.title}}</p>
+			</div>
+	
+	</body>
+</html>
+<script src="js/app.module.js"></script>
+<script src="js/controllers/listController.js"></script>
+<script src="js/services/photoFactory.js"></script>
+<script src="js/directives/bigPhoto.js"></script>
