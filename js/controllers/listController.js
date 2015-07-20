@@ -11,7 +11,7 @@ function listController(photoFactory){
 	
 	vm.photos = [];
 
-	vm.photos = photoFactory.Photos.query();
+	vm.photos = photoFactory.Photos.query({albumId: '1'});
 	
 	
 

@@ -17,7 +17,7 @@
 		}
 		
 		function Photos(){
-			return $resource('http://jsonplaceholder.typicode.com/photos?albumId=1');
+			return $resource('http://jsonplaceholder.typicode.com/photos');
 			
 		};
 		
